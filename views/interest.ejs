@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+    <title>Fonem Financials</title>
+</head>
+
+<head>
+	<title>Page Layout</title>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<div class="head1">
+			FonemFinancials
+		</div>
+		<div class="head2">
+			Where finacnial confidence and dreams come true!
+		</div>
+	</header>
+	<style>
+	.head1 {
+		font-size: 40px;
+		color: #009900;
+		font-weight: bold;
+	}
+	
+	.head2 {
+		font-size: 17px;
+		margin-left: 10px;
+		margin-bottom: 15px;
+	}
+	
+	body {
+		margin: 0 auto;
+		background-position: center;
+		background-size: contain;
+	}
+	
+	.menu {
+		position: sticky;
+		top: 0;
+		background-color: #009900;
+		padding: 10px 0px 10px 0px;
+		color: white;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	.menu a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	
+	.menu-log {
+		right: auto;
+		float: right;
+	}
+	
+	.foot {
+		width: 100%;
+		bottom: 0px;
+		background-color: #8be37f;
+		color: #fff;
+		display:inline-flex;
+		padding-bottom: 10px;
+		font-size: 10px;
+		font-weight: bold;
+	}
+	
+	.body_sec {
+		margin-left: 20px;
+	}
+    /* Apply some basic styles to the form container */
+.interest {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style text inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the textarea */
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #8be37f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #8be37f;
+}
+
+
+</style>
+
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="../views/index">HOME</a>
+		<a href="/about">ABOUT</a>
+		<a href="/sme">SMEs</a>
+		<a href="/resources">RESOURCES</a>
+		<a href="/forum">FORUM</a>
+		<a href="/events">EVENTS</a>
+		<a href="/packages">PACKAGES</a>
+		<a href="/interest">INTERESTS</a>
+
+		<div class="menu-log">
+			<a href="/">LOGOUT</a>
+		</div>						
+	</nav>
+
+<body>
+<div class="interest">
+    <form action="/interest" method="POST">
+        <label for="name">Name:</label> 
+        <input type="text" name="name" placeholder="Enter name"></input>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Enter email"></input>
+
+        <label for="number">Number:</label>
+        <input type="text" name="phone_number" placeholder="Enter Phone Number"></input>
+
+        <label for="goals">Goals:</label>
+        <textarea id="goals" name="goals" rows="4" cols="100" required></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+</body>
+<br>
+<br>
+	<!-- Footer Section -->
+	<footer class="foot">
+		&copy; 2023 FnF
+		</footer>
+
+</html>
+

@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+    <title>Fonem Financials</title>
+</head>
+
+<head>
+	<title>Page Layout</title>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<div class="head1">
+			FonemFinancials
+		</div>
+		<div class="head2">
+			Where finacnial confidence and dreams come true!
+		</div>
+	</header>
+	<style>
+	.head1 {
+		font-size: 40px;
+		color: #009900;
+		font-weight: bold;
+	}
+	
+	.head2 {
+		font-size: 17px;
+		margin-left: 10px;
+		margin-bottom: 15px;
+	}
+	
+	body {
+		margin: 0 auto;
+		background-position: center;
+		background-size: contain;
+	}
+	
+	.menu {
+		position: sticky;
+		top: 0;
+		background-color: #009900;
+		padding: 10px 0px 10px 0px;
+		color: white;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	.menu a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	
+	.menu-log {
+		right: auto;
+		float: right;
+	}
+	
+	.foot {
+		width: 100%;
+		bottom: 0px;
+		background-color: #8be37f;
+		color: #fff;
+		display:inline-flex;
+		padding-bottom: 10px;
+		font-size: 10px;
+		font-weight: bold;
+	}
+	
+	.body_sec {
+		margin-left: 20px;
+	}
+
+</style>
+
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="/">HOME</a>
+		<a href="/about">ABOUT</a>
+		<a href="/sme">SMEs</a>
+		<a href="/resources">RESOURCES</a>
+		<a href="/forum">FORUM</a>
+		<a href="/events">EVENTS</a>
+		<a href="/packages">PACKAGES</a>
+    <a href="/interest">INTERESTS</a>
+
+		<div class="menu-log">
+			<a href="/">LOGOUT</a>
+		</div>						
+	</nav>
+</html>
+
+
+
+
+<%[
+{name: 'Budgeting', 
+description: "Try the 50/30/20 rule as a simple budgeting framework. Allow up to 50% of your income for needs. Leave 30% of your income for wants. Commit 20% of your income to savings and debt repayment." , 
+image: "https://image.slidesharecdn.com/budgetingbudgetarycontrol-140910123149-phpapp02/85/budget-budgeting-budgetary-control-3-320.jpg?cb=1665668410", 
+instructorLed: true, 
+selfLed: true, 
+price: 250,
+}, 
+
+{name: 'Managing Debt',
+description:"Debt management is a way to get your debt under control through financial planning and budgeting. The goal of a debt management plan is to use these strategies to help you lower your current debt and move toward eliminating it." , 
+image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oreilly.com%2Flibrary%2Fview%2Ffinancial-planning-competency%2F9781119094661%2Fc14.xhtml&psig=AOvVaw3zEVJ-vvCPJUN-bXGpZYwk&ust=1692745095282000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNjw5Yvt7oADFQAAAAAdAAAAABA-", 
+instructorLed: true, 
+selfLed: false, 
+price: 300,
+}, 
+{name: 'Managing Credit',
+description: "Credit management is the process of deciding which customers to extend credit to and evaluating those customers' creditworthiness over time. It involves setting credit limits for customers, monitoring customer payments and collections, and assessing the risks associated with extending credit to customers.", 
+image: "https://www.horstinsurance.com/wp-content/uploads/2016/12/credit-card-debt-relief.png" , 
+instructorLed: true, 
+selfLed: false, 
+price: 350,
+}, 
+{name: 'Investment',
+description: "Investing is a strategic approach to growing your wealth over time by purchasing financial assets, such as stocks, bonds or ETFs, with the goal of generating returns. Investing works by purchasing financial assets that have the potential to grow in value, while managing risk and adhering to a long-term investment plan.", 
+image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmoney.cnn.com%2F2018%2F05%2F17%2Fpf%2Fhow-to-start-investing%2Findex.html&psig=AOvVaw3wfN0sxOk-I0Shmny9I5fM&ust=1692745472406000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNi4u7ju7oADFQAAAAAdAAAAABAX" , 
+instructorLed: true, 
+selfLed: true, 
+price: 250,
+},
+{name: 'Retirement',
+description: "Retirement planning involves determining retirement income goals and what's needed to achieve those goals. Retirement planning includes identifying income sources, sizing up expenses, implementing a savings program, and managing assets and risk." , 
+image:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallstreetmojo.com%2Fretirement-planning%2F&psig=AOvVaw38EIWi3qKNdZPvjH8adKd3&ust=1692745720989000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCLCrpbbv7oADFQAAAAAdAAAAABAP" , 
+instructorLed: true, 
+selfLed: true, 
+price: 300,
+}]
+.forEach( pack => { %>
+  <div class="pack">
+    <h2>
+      <%= pack.name %>
+    </h2>
+
+    <p> 
+    <%=pack.description %>    
+    </p>
+
+    <p> 
+    Instructor Led: <%=pack.instructorLed %>    
+    </p>
+    
+    <p> 
+    Self Led: <%=pack.selfLed %>  
+    </p>
+
+    <p> 
+    Price: <%=pack.price %>    
+    </p>
+  </div>
+
+ 
+<% }) %>
+
+<footer class="foot">
+		&copy; 2023 FnF
+		</footer>
